@@ -1,5 +1,8 @@
-import { createBrowserRouter } from "react-router-dom"
-import Home from "./components/Home"
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import Home from "./pages/Home"
+import Contact from "./pages/Contact"
+import Movie from "./pages/Movie"
+import About from "./pages/About"
 
 const App = () => {
 
@@ -10,7 +13,7 @@ const App = () => {
     { path: "/contact", element: <Contact /> }
   ])
 
-  return <h1> Hello React Router </h1>
+  return <RouterProvider router={router} />
 }
 
 
