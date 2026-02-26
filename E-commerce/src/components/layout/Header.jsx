@@ -15,10 +15,38 @@ export const Header = () => {
                 <h1 className="text-2xl font-bold"> Filx </h1>
                 <nav> 
                     <ul className="flex gap-8 cursor-pointer">
-                        <li> <NavLink to="/"> Home </NavLink></li>
-                        <li> <NavLink to="/about"> About </NavLink></li>
-                        <li> <NavLink to="/movie"> Movie </NavLink></li>
-                        <li> <NavLink to="/contact"> Contact </NavLink></li>
+                        <li> 
+                            <NavLink 
+                                to="/" 
+                                className={({ isActive }) => isActive ? "text-orange-400 font-bold" : "text-black"}
+                            > 
+                                Home 
+                            </NavLink>
+                        </li>
+                        <li> 
+                            <NavLink 
+                                to="/about" 
+                                className={({ isActive }) => isActive ? "text-orange-400 font-bold" : "text-black"}
+                            > 
+                                About 
+                            </NavLink>
+                        </li>
+                        <li> 
+                            <NavLink 
+                                to="/movie" 
+                                className={({ isActive }) => isActive ? "text-orange-400 font-bold" : "text-black"}
+                            > 
+                                Movie 
+                            </NavLink>
+                        </li>
+                        <li> 
+                            <NavLink 
+                                to="/contact" 
+                                className={({ isActive }) => isActive ? "text-orange-400 font-bold" : "text-black"}
+                            > 
+                                Contact 
+                            </NavLink>
+                        </li>
                     </ul>
                 </nav>
             </div>
