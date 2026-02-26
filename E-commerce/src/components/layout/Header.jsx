@@ -11,14 +11,14 @@ export const Header = () => {
                 </div>
             </div>
 
-            <div className="bg-amber-100 flex justify-around items-center p-4 shadow-amber-400">
+            <div className="bg-amber-100 flex justify-around items-center p-4 shadow-md">
                 <h1 className="text-2xl font-bold"> Filx </h1>
                 <nav> 
                     <ul className="flex gap-8 cursor-pointer">
-                        <li> <NavLink to=""> Home </NavLink></li>
-                        <li> <NavLink to=""> About </NavLink></li>
-                        <li> <NavLink to=""> Movie </NavLink></li>
-                        <li> <NavLink to=""> Contact  </NavLink></li>
+                        <li> <NavLink to="/"> Home </NavLink></li>
+                        <li> <NavLink to="/about"> About </NavLink></li>
+                        <li> <NavLink to="/movie"> Movie </NavLink></li>
+                        <li> <NavLink to="/contact"> Contact </NavLink></li>
                     </ul>
                 </nav>
             </div>
