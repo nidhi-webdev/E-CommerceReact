@@ -43,9 +43,9 @@ export const Footer = () => {
                     <h3 className="text-white font-semibold uppercase tracking-wider">Newsletter</h3>
                     <p className="text-sm">Be the first to know about new arrivals, sales & promos!</p>
                     <div className="pt-2">
-                        <input 
-                            type="email" 
-                            placeholder="Your Email" 
+                        <input
+                            type="email"
+                            placeholder="Your Email"
                             className="bg-transparent border-b border-gray-600 focus:border-amber-500 outline-none w-full pb-2 transition-colors"
                         />
                     </div>

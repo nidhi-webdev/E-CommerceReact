@@ -5,9 +5,9 @@ import { Header } from "./Header"
 export const AppLayout = () => {
     return (
         <>
-        <Header />
-        <Outlet />
-        <Footer />
+            <Header />
+            <Outlet />
+            <Footer />
         </>
     )
 }

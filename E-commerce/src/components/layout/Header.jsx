@@ -13,45 +13,45 @@ export const Header = () => {
 
             <div className="bg-amber-100 flex justify-around items-center p-4 shadow-md">
                 <h1 className="text-2xl font-bold"> Filx </h1>
-                <nav> 
+                <nav>
                     <ul className="flex gap-8 cursor-pointer">
-                        <li> 
-                            <NavLink 
-                                to="/" 
+                        <li>
+                            <NavLink
+                                to="/"
                                 className={({ isActive }) => isActive ? "text-orange-400 font-bold" : "text-black"}
-                            > 
-                                Home 
+                            >
+                                Home
                             </NavLink>
                         </li>
-                        <li> 
-                            <NavLink 
-                                to="/about" 
+                        <li>
+                            <NavLink
+                                to="/about"
                                 className={({ isActive }) => isActive ? "text-orange-400 font-bold" : "text-black"}
-                            > 
-                                About 
+                            >
+                                About
                             </NavLink>
                         </li>
-                        <li> 
-                            <NavLink 
-                                to="/movie" 
+                        <li>
+                            <NavLink
+                                to="/movie"
                                 className={({ isActive }) => isActive ? "text-orange-400 font-bold" : "text-black"}
-                            > 
-                                Movie 
+                            >
+                                Movie
                             </NavLink>
                         </li>
-                        <li> 
-                            <NavLink 
-                                to="/contact" 
+                        <li>
+                            <NavLink
+                                to="/contact"
                                 className={({ isActive }) => isActive ? "text-orange-400 font-bold" : "text-black"}
-                            > 
-                                Contact 
+                            >
+                                Contact
                             </NavLink>
                         </li>
                     </ul>
                 </nav>
             </div>
 
-            
+
         </div>
     )
 }
