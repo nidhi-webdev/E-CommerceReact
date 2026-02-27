@@ -18,12 +18,17 @@ export const ErrorPage = () => {
                 <h1 className="font-bold text-xl"> The page yor were looking for could not be found   </h1>
                 <p className="text-xl"> Back to previous page </p>
             </div>
-            <button onClick={handleGoBack}> Go back </button>
+
+            <div className="">
+                <button className="bg-blue-500 px-4 py-1 rounded mr-2 cursor-pointer"
+                    onClick={handleGoBack}> Go back </button>
 
 
-            <NavLink to="/" className={`bg-red-700 px-4 py-2 rounded text-white`}>
-                Go Back to Home page
-            </NavLink>
+                <NavLink to="/" className={`bg-red-700 px-4 py-2 rounded text-white`}>
+                    Go Back to Home page
+                </NavLink>
+            </div>
+
         </div>
 
     )
