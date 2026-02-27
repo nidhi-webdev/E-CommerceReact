@@ -18,7 +18,8 @@ export const Header = () => {
                         <li>
                             <NavLink
                                 to="/"
-                                className={({ isActive }) => isActive ? "text-orange-400 font-bold" : "text-black"}
+                                end
+                                className={({ isActive }) => isActive ? "text-orange-400 font-bold underline decoration-2 underline-offset-4" : "text-black"}
                             >
                                 Home
                             </NavLink>
@@ -26,7 +27,7 @@ export const Header = () => {
                         <li>
                             <NavLink
                                 to="/about"
-                                className={({ isActive }) => isActive ? "text-orange-400 font-bold" : "text-black"}
+                                className={({ isActive }) => isActive ? "text-orange-400 font-bold underline decoration-2 underline-offset-4" : "text-black"}
                             >
                                 About
                             </NavLink>
@@ -34,7 +35,7 @@ export const Header = () => {
                         <li>
                             <NavLink
                                 to="/movie"
-                                className={({ isActive }) => isActive ? "text-orange-400 font-bold" : "text-black"}
+                                className={({ isActive }) => isActive ? "text-orange-400 font-bold underline decoration-2 underline-offset-4" : "text-black"}
                             >
                                 Movie
                             </NavLink>
@@ -42,7 +43,7 @@ export const Header = () => {
                         <li>
                             <NavLink
                                 to="/contact"
-                                className={({ isActive }) => isActive ? "text-orange-400 font-bold" : "text-black"}
+                                className={({ isActive }) => isActive ? "text-orange-400 font-bold underline decoration-2 underline-offset-4" : "text-black"}
                             >
                                 Contact
                             </NavLink>
