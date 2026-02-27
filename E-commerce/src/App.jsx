@@ -4,6 +4,7 @@ import Contact from "./pages/Contact"
 import Movie from "./pages/Movie"
 import About from "./pages/About"
 import { AppLayout } from "./components/layout/AppLayout"
+import { ErrorPage } from "./pages/ErrorPage"
 
 const App = () => {
 
@@ -11,6 +12,7 @@ const App = () => {
     {
       path: "/",
       element: <AppLayout />,
+      errorElement: <ErrorPage />,
       children: [
         { path: "/", element: <Home /> },
         { path: "/about", element: <About /> },
