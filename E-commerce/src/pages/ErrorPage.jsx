@@ -1,8 +1,14 @@
-import { NavLink, useRouteError } from "react-router-dom"
+import { NavLink, useRouteError, useNavigate } from "react-router-dom"
 
 export const ErrorPage = () => {
     const error = useRouteError()
     console.log(error);
+
+    const navigate = useNavigate()
+
+    const handleGoBack = () => {
+        navigate(-1)
+    }
 
 
     return (
@@ -12,6 +18,8 @@ export const ErrorPage = () => {
                 <h1 className="font-bold text-xl"> The page yor were looking for could not be found   </h1>
                 <p className="text-xl"> Back to previous page </p>
             </div>
+            <button onClick={handleGoBack}> Go back </button>
+
 
             <NavLink to="/" className={`bg-red-700 px-4 py-2 rounded text-white`}>
                 Go Back to Home page
