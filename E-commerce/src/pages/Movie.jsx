@@ -1,9 +1,16 @@
 import React from 'react'
+import { useLoaderData } from 'react-router-dom'
 
 const Movie = () => {
+  const movieData = useLoaderData()
+  console.log(movieData);
+  
   return (
     <div>
-      Movie page
+      <h1></h1>
+      {
+
+      }
     </div>
   )
 }

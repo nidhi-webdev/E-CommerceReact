@@ -5,6 +5,7 @@ import Movie from "./pages/Movie"
 import About from "./pages/About"
 import { AppLayout } from "./components/layout/AppLayout"
 import { ErrorPage } from "./pages/ErrorPage"
+import { getMovieData } from "./api/GetApiData"
 
 const App = () => {
 
@@ -16,7 +17,7 @@ const App = () => {
       children: [
         { path: "/", element: <Home /> },
         { path: "/about", element: <About /> },
-        { path: "/movie", element: <Movie /> },
+        { path: "/movie", element: <Movie />, loader: getMovieData, },
         { path: "/contact", element: <Contact /> }
       ]
     }
