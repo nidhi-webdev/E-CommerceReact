@@ -7,15 +7,15 @@ const Movie = () => {
 
   return (
     <>
-      <h1> Movie Page </h1>
-      <ul>
-        {
-          movieData.Search.map((curMovie) => {
-            return <Card key={curMovie.imdbID} curMovie={curMovie} />
-          })
-        }
-      </ul>
-
+      <div className="container mx-auto px-4 py-8">
+        <ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
+          {
+            movieData.Search.map((curMovie) => {
+              return <Card key={curMovie.imdbID} curMovie={curMovie} />
+            })
+          }
+        </ul>
+      </div>
     </>
   )
 }
