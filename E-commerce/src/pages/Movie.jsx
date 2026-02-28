@@ -6,14 +6,17 @@ const Movie = () => {
   console.log(movieData);
 
   return (
-    <div>
+    <>
       <h1> Movie Page </h1>
-      {
-        movieData.Search.map((curMovie) => {
-          return <Card key={curMovie.imdbID} curMovie = {curMovie}   />
-        })
-      }
-    </div>
+      <ul>
+        {
+          movieData.Search.map((curMovie) => {
+            return <Card key={curMovie.imdbID} curMovie={curMovie} />
+          })
+        }
+      </ul>
+
+    </>
   )
 }
 

@@ -1,13 +1,15 @@
 export const Card = ({ curMovie }) => {
-    console.log("Card Component",curMovie);
+    console.log("Card Component", curMovie);
 
-    
+
     return (
         <>
-        <div>
-            <img src={curMovie.Poster} alt="" />
-        </div>
-        
+            <li>
+                <div>
+                    <img src={curMovie.Poster} alt="" />
+                </div>
+
+            </li>
         </>
     )
 }
