@@ -1,15 +1,17 @@
 export const Card = ({ curMovie }) => {
     console.log("Card Component", curMovie);
 
+    const { Poster, Title } = curMovie
+
 
     return (
-        <li className="list-none">
-            <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col h-full transform transition-transform hover:scale-105">
+        <li className="list-none cursor-pointer">
+            <div className="bg-white rounded-lg shadow-2xl overflow-hidden p-5 flex flex-col h-full transform transition-transform hover:scale-105">
                 <div className="relative h-96 overflow-hidden">
                     <img 
-                      src={curMovie.Poster} 
-                      alt={curMovie.Title}  
-                      className="w-full h-full object-cover"
+                      src={Poster} 
+                      alt={Title}  
+                      className="w-full h-full object-cover "
                     />
                 </div>
                 <div className="p-4 flex flex-col grow justify-between gap-3">
