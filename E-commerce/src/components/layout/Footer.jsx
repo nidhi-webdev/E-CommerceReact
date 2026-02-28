@@ -9,10 +9,10 @@ export const Footer = () => {
                         Welcome to Thapa EcomStore, your ultimate destination for cutting-edge gadgets!
                     </p>
                     <div className="flex gap-2">
-                        <img src="https://i.postimg.cc/mg962ts6/bitcoin.png" alt="bitcoin" className="w-8" />
-                        <img src="https://i.postimg.cc/Nj9dgJ98/visa.png" alt="visa" className="w-8" />
-                        <img src="https://i.postimg.cc/3N3D35KV/paypal.png" alt="paypal" className="w-8" />
-                        <img src="https://i.postimg.cc/P57P6D6h/mastercard.png" alt="mastercard" className="w-8" />
+                        <img src="https://static.vecteezy.com/ti/fotos-kostenlos/t1/37351337-ai-generiert-bitcoin-auf-feuer-neural-netzwerk-generiertrealistisch-bild-foto.jpg" alt="bitcoin" className="w-8" />
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxFzY5Fr4TzgplkI3pJGsJT-u_NLTJtraDNA&s" alt="visa" className="w-8" />
+                        <img src="https://static.vecteezy.com/ti/gratis-vektor/p1/44625954-paypal-logo-auf-weiss-hintergrund-paypal-logo-lastschrift-elektronisch-zahlung-system-finanziell-management-elektronisch-geldborse-nfc-bankwesen-anwendung-bank-anwendung-redaktionell-kostenlos-vektor.jpg" alt="paypal" className="w-8" />
+                        <img src="https://p7.hiclipart.com/preview/130/79/694/mastercard-credit-card-mastercard-logo-png.jpg" alt="mastercard" className="w-8" />
                     </div>
                 </div>
 
