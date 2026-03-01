@@ -16,12 +16,11 @@ export const Card = ({ curMovie }) => {
                 </div>
                 <div className="p-4 flex flex-col grow justify-between gap-3">
                     <h2 className="text-lg font-semibold line-clamp-1">{curMovie.Title}</h2>
-                    <NavLink to={'/movie/${imdbID}'}>
+                    <NavLink to={`/movie/${imdbID}`}>
                         <button className="bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-900 transition-colors w-full cursor-pointer">
                             Watch Now
                         </button>
                     </NavLink>
-
                 </div>
             </div>
         </li>
