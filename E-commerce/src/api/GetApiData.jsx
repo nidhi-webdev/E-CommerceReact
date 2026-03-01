@@ -4,7 +4,7 @@ export const getMovieData = async () => {
         // This is a manual delay of 3 seconds to test the loading state
         await new Promise((resolve) => setTimeout(resolve, 3000));
 
-        const response = await fetch("http://www.omdbapi.com/?i=tt3896198&apikey=1c12799f&s=titanic&page=1")
+        const response = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=${import.meta.env.VITE_API_KEY}&s=titanic&page=1`)
         const data = await response.json()
         console.log("response Data", data)
         return data
