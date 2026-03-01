@@ -1,9 +1,11 @@
-import { useParams } from "react-router-dom"
+import { useLoaderData } from "react-router-dom";
 
 export const MovieDetails = () => {
-    const param = useParams()
-    console.log("From Movie Details Page", param);
+    const movieData = useLoaderData()
+
+    
+    console.log("From Movie Details Page", movieData);
 
 
-    return <h1> Hello Dynamic Route {param.movieId} </h1>
+    return <h1> Hello Dynamic Route {movieData.Poster} </h1>
 }

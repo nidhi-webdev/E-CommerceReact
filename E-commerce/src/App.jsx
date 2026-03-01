@@ -7,6 +7,7 @@ import { AppLayout } from "./components/layout/AppLayout"
 import { ErrorPage } from "./pages/ErrorPage"
 import { getMovieData } from "./api/GetApiData"
 import { MovieDetails } from "./components/UI/MovieDetails"
+import { getMovieDetails } from "./api/GetMovieDetails"
 
 const App = () => {
 
@@ -20,7 +21,7 @@ const App = () => {
         { path: "/", element: <Home /> },
         { path: "/about", element: <About /> },
         { path: "/movie", element: <Movie />, loader: getMovieData, },
-        { path: "/movie/:movieId", element: <MovieDetails /> },
+        { path: "/movie/:movieId", element: <MovieDetails />, loader: getMovieDetails },
         { path: "/contact", element: <Contact /> }
       ]
     }
