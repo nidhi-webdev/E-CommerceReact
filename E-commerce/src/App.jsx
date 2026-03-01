@@ -14,6 +14,7 @@ const App = () => {
       path: "/",
       element: <AppLayout />,
       errorElement: <ErrorPage />,
+      hydrateFallbackElement: <h1 className="font-extrabold text-6xl">Loading Application...</h1>,
       children: [
         { path: "/", element: <Home /> },
         { path: "/about", element: <About /> },
