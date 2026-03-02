@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Home from "./pages/Home"
-import Contact from "./pages/Contact"
+import Contact, { contactData } from "./pages/Contact"
 import Movie from "./pages/Movie"
 import About from "./pages/About"
 import { AppLayout } from "./components/layout/AppLayout"
@@ -8,6 +8,7 @@ import { ErrorPage } from "./pages/ErrorPage"
 import { getMovieData } from "./api/GetApiData"
 import { MovieDetails } from "./components/UI/MovieDetails"
 import { getMovieDetails } from "./api/GetMovieDetails"
+
 
 const App = () => {
 
@@ -22,7 +23,7 @@ const App = () => {
         { path: "/about", element: <About /> },
         { path: "/movie", element: <Movie />, loader: getMovieData, },
         { path: "/movie/:movieId", element: <MovieDetails />, loader: getMovieDetails },
-        { path: "/contact", element: <Contact /> }
+        { path: "/contact", element: <Contact />, action: contactData }
       ]
     }
 

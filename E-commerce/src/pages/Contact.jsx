@@ -1,5 +1,15 @@
 import { Form } from 'react-router-dom'
 
+export const contactData = async () => {
+  try {
+    const res = await request.formData()
+    console.log("From Contact Data", res)
+  } catch (error) {
+    console.log("There is some error");
+
+  }
+}
+
 const Contact = () => {
   return (
     <Form method='POST' action='/contact'>
