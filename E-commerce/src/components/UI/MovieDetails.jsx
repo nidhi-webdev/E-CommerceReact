@@ -1,11 +1,28 @@
-import { useLoaderData } from "react-router-dom";
+import { NavLink, useLoaderData } from "react-router-dom";
 
 export const MovieDetails = () => {
     const movieData = useLoaderData()
-
-    
     console.log("From Movie Details Page", movieData);
+    const { Actors, Poster, Title, Type, Year, Plot } = movieData
 
+    return (
 
-    return <h1> Hello Dynamic Route {movieData.Poster} </h1>
+        <div className="cursor-pointer shadow-2xl ml-5 mt-10 w-91">
+            <div className="ml-7">
+            <NavLink>
+                <img src={Poster} className="" alt={Title} />
+            </NavLink>
+            </div>
+            <div className="ml-7">
+                <h4> {Title} </h4>
+                <p> {Plot} </p>
+                <p> Actor: {Actors} </p>
+                <p> Type: {Type} </p>
+                <p> Year: {Year} </p>
+
+                <button className="w-full bg-green-900"> Watch Now </button>
+            </div>
+        </div>
+
+    )
 }
