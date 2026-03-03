@@ -1,9 +1,10 @@
 import { Form } from 'react-router-dom'
 
-export const contactData = async () => {
+export const contactData = async ({ request}) => {
   try {
     const res = await request.formData()
-    console.log("From Contact Data", res)
+    const data = Object.fromEntries(res)
+    console.log("From Contact Data", data)
   } catch (error) {
     console.log("There is some error");
 
