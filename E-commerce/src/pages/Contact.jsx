@@ -29,7 +29,7 @@ const Contact = () => {
 
         <label className='mb-1 text-sm font-semibold'> Message </label>
         <textarea name='textarea' placeholder='We are always here to help you' required
-          className='border border-gray-300 mb-5 outline-none p-4 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all' > </textarea>
+          className='border border-gray-300 mb-5 outline-none p-4 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all' />
 
         <button className='bg-gray-800 text-white px-4 py-3 rounded cursor-pointer hover:bg-red-900 transition-all hover:scale-105 active:scale-95 font-bold uppercase tracking-wider '> Send Message </button>
 
